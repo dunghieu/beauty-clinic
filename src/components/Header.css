@@ -1,0 +1,57 @@
+.Header {
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  padding: 0px 20px;
+  z-index: 100;
+}
+.Header__wrapper {
+  position: relative;
+  max-width: 1140px;
+  height: 63px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Header__logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 258px;
+  height: 63px;
+}
+
+.Header__menu {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 16%;
+  transform: translateY(-50%);
+}
+
+.Header__menu-children li {
+  float: left;
+}
+.Header__menu-children a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  padding: 0 16px;
+}
+.Header__menu-children li .active {
+  font-weight: 600;
+}
+
+.Header a:hover {
+  font-weight: 600;
+}
+
+.Header__contact {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
