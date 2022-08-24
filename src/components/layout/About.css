@@ -102,7 +102,7 @@
     margin: 0px;
   }
 }
-@media (min-width: 740px) and (max-width: 1112px) {
+@media (min-width: 740px) and (max-width: 1024px) {
   .About__content-info {
     display: flex;
     justify-content: center;
