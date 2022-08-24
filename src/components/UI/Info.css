@@ -1,12 +1,9 @@
 .Info {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   max-width: 848px;
-  height: 192px;
+  max-height: 196px;
   padding: 0px 20px;
-  animation: moveToptoBottom 0.5s linear;
 }
 .Info span {
   color: #ff64ae;
@@ -17,14 +14,12 @@
 .Info h2 {
   max-width: 400px;
   margin: 15px 0px;
-  text-align: center;
   color: #091156;
   font-weight: 600;
   font-size: 36px;
   line-height: 125%;
 }
 .Info p {
-  text-align: center;
   font-size: 16px;
   color: #8b8b8b;
   letter-spacing: 0.1em;
@@ -35,16 +30,5 @@
 @media (min-width: 740px) and (max-width: 1112px) {
   .Info__title {
     text-align: center !important;
-  }
-}
-
-@keyframes moveToptoBottom {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
   }
 }

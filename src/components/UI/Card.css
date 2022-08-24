@@ -10,6 +10,12 @@
   transition: 0.5s;
   cursor: pointer;
 }
+
+.Card__none {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
 .Card:hover {
   transform: translateY(-3px);
 }
@@ -66,12 +72,17 @@
   border-radius: 50%;
   margin: 0px 10px;
   box-shadow: -2px 6px 16px -1px #f7f7ff;
+  cursor: pointer;
 }
 .Card__contact a img {
   border-radius: 50%;
   width: 49px;
   height: 49px;
   transform: scale(1.5);
+}
+
+.Card__contact a:hover > img {
+  transform: scale(1.7);
 }
 
 @media (max-width: 740px) {
