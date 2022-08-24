@@ -1,57 +1,83 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Footer.css';
+import footerLogo from '../../img/FooterLogo.png';
+import toTopBtn from '../../img/ToTopButton.png';
+import iconFb from '../../img/IconFacebook.png';
+import iconTwitter from '../../img/IconTwitter.png';
+import iconLinkedin from '../../img/IconLinked.png';
+import iconYoutube from '../../img/IconYoutube.png';
+import iconInstagram from '../../img/IconInstagram.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-footer bg-no-repeat w-full h-96">
-      <div className="sidebar">
-        <div className="flex justify-center items-center">
-          <div className="bg-footerlogo bg-no-repeat"></div>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="site-title">Pages</div>
-          <ul className="flex justify-center items-center">
-            <li className="flex-1">
-              <a href="#">Home</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">About</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Service</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Gallery</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Team</a>
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <div className="site-title">Informations</div>
-          <ul className="flex justify-center items-center">
-            <li className="flex-1">
-              <a href="#">Team & conditions</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Privacy policy</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Blog</a>
-            </li>
-            <li className="flex-1">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+    <footer className='Footer'>
+      <div className='Footer__wrapper'>
+        <div className='Footer__container'>
+          <div className='Footer__top'>
+            <div className='Footer__info'>
+              <div className='Footer__info-logo'>
+                <img src={footerLogo} alt='img' />
+              </div>
+              <div className='Footer__info-content'>
+                <p>
+                  <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
+                </p>
+                <br />
+                <p>Baker Steet 101, NY, United States.</p>
+                <div className='Footer__info-contact'>
+                  <span>+521 569 8966.</span>
+                  <span>mail@company.com.</span>
+                </div>
+              </div>
+            </div>
+            <div className='Footer__menu'>
+              <div className=' Footer__menu-sub'>
+                <strong>Pages</strong>
+                <ul>
+                  <li>➤ Home</li>
+                  <li>➤ About</li>
+                  <li>➤ Services</li>
+                  <li>➤ Gallery</li>
+                  <li>➤ Team</li>
+                </ul>
+              </div>
+              <div className=' Footer__menu-sub'>
+                <strong>Informations</strong>
+                <ul>
+                  <li>➤ Terms & conditions</li>
+                  <li>➤ Privacy policy</li>
+                  <li>➤ Blog</li>
+                  <li>➤ Contact</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className=' Footer__bottom'>
+            <div className='Footer__social'>
+              <span>
+                <img src={iconFb} alt='' />
+              </span>
+              <span>
+                <img src={iconTwitter} alt='' />
+              </span>
+              <span>
+                <img src={iconLinkedin} alt='' />
+              </span>
+              <span>
+                <img src={iconYoutube} alt='' />
+              </span>
+              <span>
+                <img src={iconInstagram} alt='' />
+              </span>
+            </div>
+            <div className='Footer__certification'>
+              <p>© AltDesain Studio 2021 - All right reserved.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="bg-totopbtn bg-no-repeat w-9 h-9"></div>
-      <div className="info">
-        <div className="social-media flex justify-center items-center"></div>
-        <div className="copyright">
-          <span>&copy; AltDesain Studio 2021 - All rights reserved</span>
-        </div>
+      <div className='Footer__scroll'>
+        <img src={toTopBtn} alt='img' />
       </div>
     </footer>
   );

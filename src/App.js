@@ -1,4 +1,5 @@
 import About from './components/layout/About';
+import Contact from './components/layout/Contact';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
 import Professional from './components/layout/Professional';
@@ -13,7 +14,8 @@ export default function App() {
       <Service />
       <About />
       <Professional />
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </>
   );
 }

@@ -57,7 +57,6 @@
 }
 
 .About__content-btnGroup {
-  margin-left: 15px;
   display: flex;
   margin-top: 40px;
   width: 100%;
@@ -87,29 +86,13 @@
 
 @media (max-width: 740px) {
   .About__content-info {
-    /*display: flex;
-		justify-content: center;*/
     text-align: center;
   }
-  .About__content-describe {
-    width: 100%;
-    padding: 0 10px;
-    text-align: center;
-  }
+
   .About__content-btnGroup {
     justify-content: center;
   }
-  .About__row {
-    width: 100%;
-  }
-  .About__col {
-    margin: 10px 0px;
-  }
 
-  .About__right {
-    display: flex;
-    justify-content: center;
-  }
   .About__content-btnLeft {
     padding: 20px;
   }
@@ -126,11 +109,7 @@
     flex-direction: column;
     text-align: center;
   }
-  .About__content-describe {
-    width: 100%;
-    padding: 0 10px;
-    text-align: center;
-  }
+
   .About__row {
     width: 100%;
   }
