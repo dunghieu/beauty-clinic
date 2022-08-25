@@ -132,7 +132,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 740px) {
+@media only screen and (max-width: 740px) {
+  .Footer {
+    top: 6000px;
+  }
+
   .Footer__info {
     display: none;
   }
@@ -140,9 +144,13 @@
   .Footer__menu {
     width: 100%;
   }
+
+  .Footer__social {
+    gap: 10px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .Footer__scroll {
     right: 10px;
   }

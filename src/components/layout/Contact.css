@@ -91,7 +91,11 @@
   width: 100%;
 }
 
-@media (max-width: 740px) {
+@media only screen and (max-width: 740px) {
+  .Contact {
+    top: 4987px;
+  }
+
   .Contact__left {
     display: none;
   }
@@ -111,7 +115,7 @@
   }
 }
 
-@media (min-width: 740px) and (max-width: 1024px) {
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
   .Contact__rowname {
     gap: 5px;
   }

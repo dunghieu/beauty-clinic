@@ -9,6 +9,7 @@
   border-radius: 42px;
   transition: 0.5s;
   cursor: pointer;
+  z-index: 5;
 }
 
 .Card__none {
@@ -85,15 +86,15 @@
   transform: scale(1.7);
 }
 
-@media (max-width: 740px) {
+@media only screen and (max-width: 740px) {
   .Card {
-    max-width: 300px;
+    height: 500px;
   }
   .Card__info-describe {
     text-align: center;
   }
 }
-@media (min-width: 740px) and (max-width: 1112px) {
+@media only screen and (min-width: 740px) and (max-width: 1112px) {
   .Card {
     max-width: 500px;
   }

@@ -98,7 +98,7 @@
   background-color: #8b8b8b;
 }
 
-@media (max-width: 770px) {
+@media only screen and (max-width: 770px) {
   .Slider__main-right {
     position: absolute;
     z-index: -5;
