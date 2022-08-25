@@ -1,0 +1,100 @@
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 363px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px 25px #f7f7ff;
+  border-radius: 42px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Card__none {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.Card:hover {
+  transform: translateY(-3px);
+}
+.Card__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  padding: 50px 20px;
+  min-height: 530px;
+}
+.Card__image {
+  height: 146px;
+}
+
+.Card__image img {
+  height: 100%;
+  border-radius: 50%;
+}
+.Card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  text-align: center;
+}
+.Card__info-title {
+  color: #ff64ae;
+}
+.Card__info-name {
+  margin: 5px 0px 10px 0px;
+  color: #091156;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+}
+.Card__info-describe {
+  color: #8b8b8b;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.Card__contact {
+  margin-top: 50px;
+}
+.Card__contact a {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  box-shadow: -2px 6px 16px -1px #f7f7ff;
+  cursor: pointer;
+}
+.Card__contact a img {
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  transform: scale(1.5);
+}
+
+.Card__contact a:hover > img {
+  transform: scale(1.7);
+}
+
+@media (max-width: 740px) {
+  .Card {
+    max-width: 300px;
+  }
+  .Card__info-describe {
+    text-align: center;
+  }
+}
+@media (min-width: 740px) and (max-width: 1112px) {
+  .Card {
+    max-width: 500px;
+  }
+}

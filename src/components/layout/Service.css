@@ -1,0 +1,31 @@
+.Service {
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  z-index: 1;
+}
+
+.Service__Info {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Service__wrapper {
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1140px;
+}
+
+.Service__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+  margin: 20px auto;
+}
