@@ -5,7 +5,7 @@ import slideImg from '../../img/SlideImg.png';
 
 const Slider = () => {
   return (
-    <div className='Slider '>
+    <section className='Slider '>
       <div className='Slider__wrapper  '>
         <div className='Slider__main '>
           <div className='Slider__main-left '>
@@ -22,7 +22,7 @@ const Slider = () => {
         </div>
         <button className='Slider__button'></button>
       </div>
-    </div>
+    </section>
   );
 };
 

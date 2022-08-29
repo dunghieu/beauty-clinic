@@ -7,7 +7,7 @@ import serviceImg3 from '../../img/Core3.png';
 
 const Service = () => {
   return (
-    <div className='Service '>
+    <section className='Service '>
       <div className='Service__wrapper'>
         <Info className='Service__Info'>
           <span>Main Services</span>
@@ -36,7 +36,7 @@ const Service = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,124 +3,12 @@
 }
 
 .About__wrapper {
+  padding-top: 200px;
   display: flex;
-  max-width: 1300px;
-  margin: auto;
-  padding: 50px 0;
-  height: 100%;
-  background-image: url('../../img/AboutUsBackground.png');
-  background-repeat: no-repeat;
-  min-height: 800px;
-  background-size: cover;
-  z-index: -2;
-}
-
-.About__content {
-  display: flex;
-  min-height: 300px;
-  max-width: 1140px;
-  margin: auto;
-  padding: 0px 40px;
-  gap: 10px;
-}
-.About__content-left {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  gap: 100px;
-}
-
-.About__content-right {
-  margin-top: 40px;
-  display: flex;
-}
-
-.About__content-info {
-  width: 100%;
-  text-align: start !important;
-}
-
-.About__content-image {
-  max-width: 476px;
-  max-height: 350px;
-  border-radius: 50px;
-  box-shadow: 0px 0px 50px 25px #ffffff;
-}
-
-.About__content-btnGroup {
-  z-index: 1;
-  display: flex;
-  margin-top: 40px;
-  width: 100%;
-  gap: 30px;
-}
-.About__content-btnLeft {
-  height: 58.36px;
-  width: 200px;
-}
-.About__content-btnRight {
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  height: 58.36px;
-  width: 213px;
 }
 
-.About__content-btnRight span {
-  color: #8b8b8b;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1em;
-}
-
-@media only screen and (max-width: 740px) {
-  .About {
-    top: 2400px;
-  }
-
-  .About__content {
-    flex-direction: column;
-    padding: 0 20px;
-    align-items: center;
-  }
-
-  .About__content-left {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .About__content-right {
-    margin: 0;
-  }
-
-  .About__content-right img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .About__content-btnGroup button {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 740px) and (max-width: 1024px) {
-  .About {
-    top: 1300px;
-  }
-
-  .About__content-info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .About__content-image {
-    max-width: 100%;
-  }
+.About__info h2 {
+  max-width: 800px !important;
 }

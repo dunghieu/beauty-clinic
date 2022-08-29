@@ -1,0 +1,126 @@
+.AboutUs {
+  width: 100%;
+}
+
+.AboutUs__wrapper {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 0;
+  height: 100%;
+  background-image: url('../../img/AboutUsBackground.png');
+  background-repeat: no-repeat;
+  min-height: 800px;
+  background-size: cover;
+  z-index: -2;
+}
+
+.AboutUs__content {
+  display: flex;
+  min-height: 300px;
+  max-width: 1140px;
+  margin: auto;
+  padding: 0px 40px;
+  gap: 10px;
+}
+.AboutUs__content-left {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+.AboutUs__content-right {
+  margin-top: 40px;
+  display: flex;
+}
+
+.AboutUs__content-info {
+  width: 100%;
+  text-align: start !important;
+}
+
+.AboutUs__content-image {
+  max-width: 476px;
+  max-height: 350px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 50px 25px #ffffff;
+}
+
+.AboutUs__content-btnGroup {
+  z-index: 1;
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  gap: 30px;
+}
+.AboutUs__content-btnLeft {
+  height: 58.36px;
+  width: 200px;
+}
+.AboutUs__content-btnRight {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 58.36px;
+  width: 213px;
+}
+
+.AboutUs__content-btnRight span {
+  color: #8b8b8b;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 740px) {
+  .AboutUs {
+    top: 2400px;
+  }
+
+  .AboutUs__content {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .AboutUs__content-left {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .AboutUs__content-right {
+    margin: 0;
+  }
+
+  .AboutUs__content-right img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .AboutUs__content-btnGroup button {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .AboutUs {
+    top: 1300px;
+  }
+
+  .AboutUs__content-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .AboutUs__content-image {
+    max-width: 100%;
+  }
+}

@@ -1,8 +1,6 @@
 .Info {
   display: flex;
   flex-direction: column;
-  max-width: 848px;
-  max-height: 196px;
 }
 .Info span {
   color: #ff64ae;

@@ -6,7 +6,7 @@ import Input from '../UI/Input';
 
 const Contact = () => {
   return (
-    <div className='Contact'>
+    <section className='Contact'>
       <div className='Contact__wrapper'>
         <div className='Contact__container'>
           <div className='Contact__left'>
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
