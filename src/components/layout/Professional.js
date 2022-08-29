@@ -12,39 +12,35 @@ const socialMedia = [iconTwitter, iconFacebook, iconInstagram];
 
 const Professional = () => {
   return (
-    <div className='Professional'>
-      <div className='Professional__wrapper'>
-        <Info className='Professional__Info'>
-          <span>Main Services</span>
-          <h2> Learn services to focus on your beauty</h2>
-          <p>
-            Porta rhoncus orci condimentum vitae lobortis eu dignissim non
-            massa. Non parturient amet, feugiat tellus sagittis, scelerisque
-            eget nulla turpis
-          </p>
+    <div className="Professional">
+      <div className="Professional__wrapper">
+        <Info className="Professional__Info">
+          <span>Professional Teams</span>
+          <h2>The Professional expert</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
         </Info>
-        <div className='Professional__item'>
+        <div className="Professional__item">
           <Card
-            className='Card__none'
+            className="Card__none"
             image={professionalImg1}
-            title='Surgeon'
-            name='Briyan Nevalli'
-            describe='Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit'
+            title="Surgeon"
+            name="Briyan Nevalli"
+            describe="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit"
             contact={socialMedia}
           />
           <Card
             image={professionalImg2}
-            title='Dermatologist'
-            name='Bella sebastian'
-            describe='Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit'
+            title="Dermatologist"
+            name="Bella sebastian"
+            describe="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit"
             contact={socialMedia}
           />
           <Card
-            className='Card__none'
-            title='Stylist expert'
+            className="Card__none"
+            title="Stylist expert"
             image={professionalImg3}
-            name='Lilly Adams'
-            describe='Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit'
+            name="Lilly Adams"
+            describe="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit"
             contact={socialMedia}
           />
         </div>

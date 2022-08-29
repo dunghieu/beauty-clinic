@@ -29,3 +29,12 @@
   gap: 5%;
   margin: 20px auto;
 }
+
+@media only screen and (max-width: 740px) {
+  .Service__item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}

@@ -81,10 +81,6 @@
   height: 240px;
 }
 
-.Contact__form .Contact__rowname input {
-  width: 250px;
-}
-
 .Contact__form .textarea {
   height: 239.47px;
 }
@@ -95,17 +91,17 @@
   width: 100%;
 }
 
-/* @media (max-width: 740px) {
-  .Contact__image {
-    width: 100%;
+@media only screen and (max-width: 740px) {
+  .Contact {
+    top: 4987px;
+  }
+
+  .Contact__left {
+    display: none;
   }
 
   .Contact__input {
     width: 100%;
-  }
-  .Contact__col-input {
-    margin-top: 35px;
-    justify-content: center;
   }
 
   .Contact__right {
@@ -113,18 +109,14 @@
     margin: auto;
   }
   .Contact__rowname {
+    flex-direction: column;
     width: 100%;
+    gap: 20px;
   }
 }
 
-@media (min-width: 740px) and (max-width: 1024px) {
-  .Contact__info-des {
-    align-items: center;
-  }
-  .Contact__col {
-    margin: auto;
-  }
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
   .Contact__rowname {
-    width: 520px;
+    gap: 5px;
   }
-} */
+}

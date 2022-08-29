@@ -9,29 +9,33 @@ import iconYoutube from '../../img/IconYoutube.png';
 import iconInstagram from '../../img/IconInstagram.png';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer className='Footer'>
-      <div className='Footer__wrapper'>
-        <div className='Footer__container'>
-          <div className='Footer__top'>
-            <div className='Footer__info'>
-              <div className='Footer__info-logo'>
-                <img src={footerLogo} alt='img' />
+    <footer className="Footer">
+      <div className="Footer__wrapper">
+        <div className="Footer__container">
+          <div className="Footer__top">
+            <div className="Footer__info">
+              <div className="Footer__info-logo">
+                <img src={footerLogo} alt="img" />
               </div>
-              <div className='Footer__info-content'>
+              <div className="Footer__info-content">
                 <p>
                   <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
                 </p>
                 <br />
                 <p>Baker Steet 101, NY, United States.</p>
-                <div className='Footer__info-contact'>
+                <div className="Footer__info-contact">
                   <span>+521 569 8966.</span>
                   <span>mail@company.com.</span>
                 </div>
               </div>
             </div>
-            <div className='Footer__menu'>
-              <div className=' Footer__menu-sub'>
+            <div className="Footer__menu">
+              <div className=" Footer__menu-sub">
                 <strong>Pages</strong>
                 <ul>
                   <li>➤ Home</li>
@@ -41,7 +45,7 @@ const Footer = () => {
                   <li>➤ Team</li>
                 </ul>
               </div>
-              <div className=' Footer__menu-sub'>
+              <div className=" Footer__menu-sub">
                 <strong>Informations</strong>
                 <ul>
                   <li>➤ Terms & conditions</li>
@@ -52,32 +56,32 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=' Footer__bottom'>
-            <div className='Footer__social'>
+          <div className=" Footer__bottom">
+            <div className="Footer__social">
               <span>
-                <img src={iconFb} alt='' />
+                <img src={iconFb} alt="" />
               </span>
               <span>
-                <img src={iconTwitter} alt='' />
+                <img src={iconTwitter} alt="" />
               </span>
               <span>
-                <img src={iconLinkedin} alt='' />
+                <img src={iconLinkedin} alt="" />
               </span>
               <span>
-                <img src={iconYoutube} alt='' />
+                <img src={iconYoutube} alt="" />
               </span>
               <span>
-                <img src={iconInstagram} alt='' />
+                <img src={iconInstagram} alt="" />
               </span>
             </div>
-            <div className='Footer__certification'>
+            <div className="Footer__certification">
               <p>© AltDesain Studio 2021 - All right reserved.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div className='Footer__scroll'>
-        <img src={toTopBtn} alt='img' />
+        <div className="Footer__scroll" onClick={scrollToTop}>
+          <img src={toTopBtn} alt="img" />
+        </div>
       </div>
     </footer>
   );
