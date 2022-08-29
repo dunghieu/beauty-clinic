@@ -6,8 +6,8 @@
   font-style: normal;
 }
 
-body {
-  overflow-x: hidden;
+body.modal-open {
+  overflow-y: hidden;
 }
 
 ul {

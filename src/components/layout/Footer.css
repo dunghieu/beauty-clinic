@@ -148,10 +148,33 @@
   .Footer__social {
     gap: 10px;
   }
-}
-
-@media only screen and (max-width: 1024px) {
   .Footer__scroll {
     right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 740px) {
+  .Footer__info-contact {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .Footer__bottom {
+    justify-content: space-around;
+  }
+
+  .Footer__social {
+    width: 40%;
+  }
+
+  .Footer__certification {
+    width: 50%;
+    text-align: center;
+  }
+
+  .Footer__scroll {
+    right: 10px;
+    bottom: 100px;
   }
 }
