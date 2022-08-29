@@ -1,18 +1,12 @@
 .About {
-  position: absolute;
-  margin-top: 50px;
-  top: 1250px;
-  left: 50%;
   width: 100%;
-  transform: translateX(-50%);
-  max-width: 1440px;
 }
 
 .About__wrapper {
   display: flex;
   max-width: 1300px;
   margin: auto;
-  padding-top: 200px;
+  padding: 50px 0;
   height: 100%;
   background-image: url('../../img/AboutUsBackground.png');
   background-repeat: no-repeat;
@@ -23,7 +17,6 @@
 
 .About__content {
   display: flex;
-  margin-top: 50px;
   min-height: 300px;
   max-width: 1140px;
   margin: auto;

@@ -6,10 +6,6 @@
   font-style: normal;
 }
 
-body.modal-open {
-  overflow-y: hidden;
-}
-
 ul {
   padding: 0;
   list-style: none;

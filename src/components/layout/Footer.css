@@ -1,8 +1,5 @@
 .Footer {
-  position: absolute;
-  top: 3700px;
   width: 100%;
-  z-index: -10;
 }
 .Footer__wrapper {
   position: relative;
@@ -16,7 +13,7 @@
 
 .Footer__container {
   margin: auto;
-  margin-top: 250px;
+  margin-top: 200px;
   width: 80%;
   padding: 0px 20px;
 }
@@ -98,7 +95,7 @@
 }
 
 .Footer__bottom {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -127,7 +124,7 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  bottom: 180px;
+  bottom: 200px;
   right: 150px;
   cursor: pointer;
 }
