@@ -70,9 +70,9 @@
 }
 .show > .Header__contact {
   display: block !important;
-  left: 50%;
-  top: 60%;
-  transform: translateX(-80%);
+  left: 10%;
+  top: 80%;
+  /* transform: translateX(-80%); */
 }
 .show > .Header__menu > ul {
   display: flex;
@@ -127,7 +127,7 @@
   right: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .show {
     width: 100%;
   }

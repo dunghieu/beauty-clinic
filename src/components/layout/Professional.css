@@ -43,3 +43,9 @@
     gap: 0px;
   }
 }
+
+@media only screen and (min-width: 740px) and (max-width: 1112px) {
+  .Professional__item {
+    gap: 5px;
+  }
+}

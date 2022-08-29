@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 740px) {
   .Contact {
-    top: 4987px;
+    top: 5000px;
   }
 
   .Contact__left {
@@ -116,6 +116,16 @@
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .Contact__container {
+    padding: 0 20px;
+  }
+  .Contact__left {
+    width: 50%;
+  }
+  .Contact__right {
+    width: 50%;
+  }
+
   .Contact__rowname {
     gap: 5px;
   }

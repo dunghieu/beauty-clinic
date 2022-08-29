@@ -87,12 +87,12 @@
 
 @media only screen and (max-width: 740px) {
   .About {
-    top: 2345px;
+    top: 2400px;
   }
 
   .About__content {
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
     align-items: center;
   }
 
