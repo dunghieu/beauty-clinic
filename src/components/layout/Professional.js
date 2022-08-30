@@ -10,9 +10,9 @@ import iconInstagram from '../../img/social-insta.png';
 
 const socialMedia = [iconTwitter, iconFacebook, iconInstagram];
 
-const Professional = () => {
+const Professional = (props) => {
   return (
-    <section className='Professional'>
+    <section className={`Professional ${props.className}`}>
       <div className='Professional__wrapper'>
         <Info className='Professional__Info'>
           <span>Professional Teams</span>

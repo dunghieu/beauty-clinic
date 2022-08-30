@@ -18,7 +18,7 @@
 
 .Slogan__info {
   display: flex;
-  max-width: 732px;
+  max-width: 680px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -89,24 +89,31 @@
 
 @media (max-width: 1024px) {
   .Slogan__service,
-  .Slogan__gallery {
+  .Slogan__gallery,
+  .Slogan__team {
     gap: 50px;
   }
 
   .Slogan__service .Slogan__info,
-  .Slogan__gallery .Slogan__info {
+  .Slogan__gallery .Slogan__info,
+  .Slogan__team .Slogan__info {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
+  .Slogan__wrapper {
+    gap: 0px;
+  }
+
   .Slogan__service {
     flex-direction: column;
     gap: 50px;
   }
 
   .Slogan__service .Slogan__info,
-  .Slogan__gallery .Slogan__info {
+  .Slogan__gallery .Slogan__info,
+  .Slogan__team .Slogan__info {
     width: 100%;
     padding: 0 20px;
   }

@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.Professional__team {
+  margin-top: 100px;
+}
+
+.Professional__team .Professional__wrapper {
+  background-image: url('../../img/TeamBackground.png');
+}
+
 .Professional__wrapper {
   padding-top: 50px;
   position: relative;

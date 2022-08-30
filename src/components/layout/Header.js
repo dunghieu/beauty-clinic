@@ -4,7 +4,7 @@ import logo from '../../img/MainLogo.png';
 import Button from '../UI/Button';
 import Backdrop from '../UI/Backdrop';
 import useWindowDimensions from '../../hooks/useWindowDimentions';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -32,7 +32,9 @@ const Header = () => {
       {isShow && <Backdrop />}
       <div className='Header__wrapper'>
         <div className='Header__logo'>
-          <img src={logo} alt='' />
+          <Link to='/'>
+            <img src={logo} alt='' />
+          </Link>
         </div>
         <div className='Header__toggle' onClick={toggleMenu}>
           <span className='Header__icon'></span>
