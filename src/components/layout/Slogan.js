@@ -1,15 +1,17 @@
-import React from 'react';
+import './Slogan.css';
 
 const Slogan = (props) => {
   return (
     <section className='Slogan'>
       <div
         className='Slogan__wrapper'
-        style={{backgroundImg: `url(${props.slogan})`}}
+        style={{backgroundImage: `url(${props.slogan})`}}
       >
-        <span>{props.sloganName}</span>
-        <h2>{props.sloganTitle}</h2>
-        <p>{props.sloganDescription}</p>
+        <div className='Slogan__info'>
+          <span>{props.sloganName}</span>
+          <h2>{props.sloganTitle}</h2>
+          <p>{props.sloganDescription}</p>
+        </div>
       </div>
     </section>
   );

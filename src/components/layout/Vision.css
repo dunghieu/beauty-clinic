@@ -1,0 +1,17 @@
+.Vision {
+  width: 100%;
+}
+
+.Vision__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 50px 20px;
+}
+
+@media (max-width: 1024px) {
+  .Vision__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

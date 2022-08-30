@@ -1,0 +1,23 @@
+.Clients {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.Clients__wrapper {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.Clients__wrapper .Info {
+  align-items: center;
+}
+
+.Clients__list {
+}
+
+@media (max-width: 1024px) {
+}

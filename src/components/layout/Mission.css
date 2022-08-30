@@ -1,0 +1,16 @@
+.Miss ion {
+  width: 100%;
+}
+
+.Mission__wrapper {
+  display: flex;
+  padding: 50px 20px;
+}
+
+@media (max-width: 1024px) {
+  .Mission__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

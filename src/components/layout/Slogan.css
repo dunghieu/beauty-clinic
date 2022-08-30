@@ -1,0 +1,48 @@
+.Slogan {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.Slogan__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.Slogan__info {
+  display: flex;
+  max-width: 732px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+.Slogan__info span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #abb4ff;
+}
+
+.Slogan__info h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 125%;
+  color: #ffffff;
+  padding: 0 30px;
+}
+
+.Slogan__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #cacaca;
+}

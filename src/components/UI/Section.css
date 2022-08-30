@@ -1,0 +1,31 @@
+.Section__main {
+  width: 50%;
+}
+
+.Section__main .Info {
+  text-align: left !important;
+  padding: 0 100px;
+}
+
+.Section__img {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .Section__main {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .Section__main .Info {
+    padding: 0 10px;
+  }
+
+  .Section__img {
+    width: 100%;
+  }
+
+  .Section__img img {
+    width: 100%;
+  }
+}

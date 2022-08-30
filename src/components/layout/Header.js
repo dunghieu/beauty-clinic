@@ -4,6 +4,7 @@ import logo from '../../img/MainLogo.png';
 import Button from '../UI/Button';
 import Backdrop from '../UI/Backdrop';
 import useWindowDimensions from '../../hooks/useWindowDimentions';
+import {NavLink} from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -42,21 +43,44 @@ const Header = () => {
           <div className='Header__menu '>
             <ul className='Header__menu-children '>
               <li>
-                <a href='#' className='active'>
+                <NavLink
+                  to='/'
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                >
                   Home +
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href='#'>About</a>
+                <NavLink
+                  to='/about'
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                >
+                  About
+                </NavLink>
               </li>
               <li>
-                <a href='#'>Service</a>
+                <NavLink
+                  to='/service'
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                >
+                  Service
+                </NavLink>
               </li>
               <li>
-                <a href='#'>Gallery</a>
+                <NavLink
+                  to='/gallery'
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                >
+                  Gallery
+                </NavLink>
               </li>
               <li>
-                <a href='#'>Blog</a>
+                <NavLink
+                  to='/blog'
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                >
+                  Blog
+                </NavLink>
               </li>
             </ul>
           </div>
