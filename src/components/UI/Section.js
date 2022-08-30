@@ -9,6 +9,9 @@ const Section = (props) => {
           <span>{props.sectionName}</span>
           <h2>{props.sectionTitle}</h2>
           <p>{props.sectionDescription}</p>
+          {props.isServicePage && (
+            <div className='Section__appointment'>Make an Appointment</div>
+          )}
         </Info>
       </div>
       <div className='Section__img'>

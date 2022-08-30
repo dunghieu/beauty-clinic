@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  gap: 150px;
   margin: auto;
 }
 
@@ -45,4 +46,54 @@
   line-height: 24px;
   letter-spacing: 0.1em;
   color: #cacaca;
+}
+
+.Slogan__service .Slogan__info {
+  text-align: left;
+  width: 40%;
+}
+
+.Slogan__service .Slogan__info h2 {
+  padding: 0;
+}
+
+.Slogan__service .play-btn {
+  display: flex;
+  align-items: center;
+  max-width: 335px;
+}
+
+.Slogan__service .play-btn img {
+  width: 127px;
+  height: 127px;
+}
+
+.Slogan__service .play-btn span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .Slogan__service {
+    gap: 50px;
+  }
+
+  .Slogan__service .Slogan__info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Slogan__service {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Slogan__service .Slogan__info {
+    width: 100%;
+    padding: 0 20px;
+  }
 }

@@ -1,0 +1,17 @@
+.BeautyProduct {
+  width: 100%;
+}
+
+.BeautyProduct__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 50px 20px;
+}
+
+@media (max-width: 1024px) {
+  .BeautyProduct__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

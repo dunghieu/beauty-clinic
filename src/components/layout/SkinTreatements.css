@@ -1,0 +1,16 @@
+.SkinTreatements {
+  width: 100%;
+}
+
+.SkinTreatements__wrapper {
+  display: flex;
+  padding: 50px 20px;
+}
+
+@media (max-width: 1024px) {
+  .SkinTreatements__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
