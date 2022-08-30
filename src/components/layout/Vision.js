@@ -13,11 +13,12 @@ const Vision = () => {
     <section className='Vision'>
       <div className='Vision__wrapper'>
         <Section
-          sectionImg={visionImg}
           sectionName={visionName}
           sectionTitle={visionTitle}
           sectionDescription={visionDescription}
-        />
+        >
+          <img src={visionImg} alt={visionName} />
+        </Section>
       </div>
     </section>
   );

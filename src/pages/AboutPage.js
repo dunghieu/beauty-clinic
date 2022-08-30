@@ -7,12 +7,12 @@ import Slogan from '../components/layout/Slogan';
 import Vision from '../components/layout/Vision';
 import sloganAbout from '../img/SloganAbout.png';
 
-const AboutPage = () => {
-  const sloganName = 'Business Slogan';
-  const sloganTitle = 'Best responsibility and service for our customers';
-  const sloganDescription =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis';
+const sloganName = 'Business Slogan';
+const sloganTitle = 'Best responsibility and service for our customers';
+const sloganDescription =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis';
 
+const AboutPage = () => {
   return (
     <div className='main'>
       <About />

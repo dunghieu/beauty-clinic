@@ -14,9 +14,7 @@ const Section = (props) => {
           )}
         </Info>
       </div>
-      <div className='Section__img'>
-        <img src={props.sectionImg} alt={props.sectionName} />
-      </div>
+      <div className='Section__img'>{props.children}</div>
     </>
   );
 };

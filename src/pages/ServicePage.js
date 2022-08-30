@@ -7,10 +7,11 @@ import sloganService from '../img/SloganServices.png';
 import playBtn from '../img/PlayBtn.png';
 import FAQs from '../components/layout/FAQs';
 
+const sloganTitle = 'Best responsibility and service for our customers';
+const sloganDescription =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis';
+
 const ServicePage = () => {
-  const sloganTitle = 'Best responsibility and service for our customers';
-  const sloganDescription =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis';
   return (
     <div className='main'>
       <Services />

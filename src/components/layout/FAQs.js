@@ -46,7 +46,7 @@ const FAQs = () => {
                 className={`FAQs__question ${
                   isShowAnswer === item.id ? 'FAQs__active' : ''
                 }`}
-                onClick={toggleAnswer.bind(null, item.id)}
+                onClick={() => toggleAnswer(item.id)}
               >
                 {item.question}
               </div>

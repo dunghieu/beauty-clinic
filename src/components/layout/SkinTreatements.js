@@ -13,11 +13,12 @@ const SkinTreatements = () => {
       <div className='SkinTreatements__wrapper'>
         <Section
           isServicePage={true}
-          sectionImg={skinTreatementsImg}
           sectionName={skinTreatementsName}
           sectionTitle={skinTreatementsTitle}
           sectionDescription={skinTreatementsDescription}
-        />
+        >
+          <img src={skinTreatementsImg} alt={skinTreatementsName} />
+        </Section>
       </div>
     </section>
   );

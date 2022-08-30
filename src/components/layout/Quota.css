@@ -1,0 +1,31 @@
+.Quota {
+  width: 100%;
+}
+
+.Quota__wrapper {
+  display: flex;
+  padding: 100px 150px;
+  align-items: center;
+}
+
+.Quota__wrapper .Section__main {
+  width: 60%;
+}
+
+.Quota__wrapper .Section__main .Info {
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .Quota__wrapper {
+    padding: 50px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Quota__wrapper .Section__main {
+    width: 90%;
+  }
+}

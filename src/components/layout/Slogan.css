@@ -53,17 +53,23 @@
   width: 40%;
 }
 
+.Slogan__gallery .Slogan__info {
+  max-width: 555px;
+}
+
 .Slogan__service .Slogan__info h2 {
   padding: 0;
 }
 
-.Slogan__service .play-btn {
+.Slogan__service .play-btn,
+.Slogan__gallery .play-btn {
   display: flex;
   align-items: center;
   max-width: 335px;
 }
 
-.Slogan__service .play-btn img {
+.Slogan__service .play-btn img,
+.Slogan__gallery .play-btn img {
   width: 127px;
   height: 127px;
 }
@@ -76,12 +82,19 @@
   color: #ffffff;
 }
 
+.Slogan__gallery {
+  flex-direction: column;
+  gap: 0;
+}
+
 @media (max-width: 1024px) {
-  .Slogan__service {
+  .Slogan__service,
+  .Slogan__gallery {
     gap: 50px;
   }
 
-  .Slogan__service .Slogan__info {
+  .Slogan__service .Slogan__info,
+  .Slogan__gallery .Slogan__info {
     width: 50%;
   }
 }
@@ -92,7 +105,8 @@
     gap: 50px;
   }
 
-  .Slogan__service .Slogan__info {
+  .Slogan__service .Slogan__info,
+  .Slogan__gallery .Slogan__info {
     width: 100%;
     padding: 0 20px;
   }

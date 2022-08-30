@@ -13,11 +13,12 @@ const Mission = () => {
     <section className='Mission'>
       <div className='Mission__wrapper'>
         <Section
-          sectionImg={missionImg}
           sectionName={missionName}
           sectionTitle={missionTitle}
           sectionDescription={missionDescription}
-        />
+        >
+          <img src={missionImg} alt={missionName} />
+        </Section>
       </div>
     </section>
   );

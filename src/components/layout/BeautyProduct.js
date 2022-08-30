@@ -12,11 +12,12 @@ const BeautyProduct = () => {
       <div className='BeautyProduct__wrapper'>
         <Section
           isServicePage={true}
-          sectionImg={beautyProductImg}
           sectionName={beautyProductName}
           sectionTitle={beautyProductTitle}
           sectionDescription={beautyProductDescription}
-        />
+        >
+          <img src={beautyProductImg} alt={beautyProductName} />
+        </Section>
       </div>
     </section>
   );
