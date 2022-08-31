@@ -15,11 +15,9 @@ const Professional = (props) => {
     <section className={`Professional ${props.className}`}>
       <div className='Professional__wrapper'>
         <Info className='Professional__Info'>
-          <span>Professional Teams</span>
-          <h2>The Professional expert</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
-          </p>
+          <span>{props.professionalName}</span>
+          <h2>{props.professionalTitle}</h2>
+          <p>{props.professionalDescription}</p>
         </Info>
         <div className='Professional__item'>
           <Card

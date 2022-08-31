@@ -12,11 +12,20 @@ const sloganTitle = 'Best responsibility and service for our customers';
 const sloganDescription =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis';
 
+const professionalName = 'Professional Teams';
+const professionalTitle = 'The Professional expert';
+const professionalDescription =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.';
+
 const AboutPage = () => {
   return (
     <div className='main'>
       <About />
-      <Professional />
+      <Professional
+        professionalName={professionalName}
+        professionalTitle={professionalTitle}
+        professionalDescription={professionalDescription}
+      />
       <Slogan
         slogan={sloganAbout}
         sloganName={sloganName}
