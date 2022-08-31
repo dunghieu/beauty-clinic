@@ -37,10 +37,6 @@
 }
 
 @media only screen and (max-width: 740px) {
-  .Professional {
-    top: 3456px;
-  }
-
   .Professional__item {
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,90 @@
+.Contact__form {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin: 50px 0;
+}
+
+.Contact__form__main {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  gap: 30px;
+}
+
+.Contact__form__img {
+  display: flex;
+  justify-content: center;
+  max-width: 520px;
+  max-height: 614px;
+  padding: 10px;
+}
+.Contact__form__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.Contact__form input {
+  height: 61.58px;
+  width: 100%;
+  padding: 25px;
+}
+
+.Contact__form textarea {
+  padding: 25px;
+  border: 1px solid #d9ddfe;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  resize: none;
+  height: 240px;
+}
+
+.Contact__form .textarea {
+  height: 239.47px;
+}
+
+.Contact__rowname {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 740px) {
+  .Contact__form__img {
+    display: none;
+  }
+
+  .Contact__input {
+    width: 100%;
+  }
+
+  .Contact__form__main {
+    width: 80%;
+    margin: auto;
+  }
+  .Contact__rowname {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .Contact__form {
+    padding: 0 20px;
+  }
+  .Contact__form__img {
+    width: 50%;
+  }
+  .Contact__form__main {
+    width: 50%;
+  }
+
+  .Contact__rowname {
+    gap: 5px;
+  }
+}

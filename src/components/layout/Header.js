@@ -87,7 +87,9 @@ const Header = () => {
             </ul>
           </div>
           <div className='Header__contact'>
-            <Button type='button'>Contact</Button>
+            <Link to='/contact'>
+              <Button type='button'>Contact</Button>
+            </Link>
           </div>
         </div>
       </div>

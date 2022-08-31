@@ -7,6 +7,7 @@ import ServicePage from './pages/ServicePage';
 import GalleryPage from './pages/GalleryPage';
 import BlogPage from './pages/BlogPage';
 import TeamPage from './pages/TeamPage';
+import ContactPage from './pages/ContactPage';
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
         <Route path='/service' element={<ServicePage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/blog' element={<BlogPage />} />
-        {/* <Route path='/contact' element={<ContactPage />} /> */}
+        <Route path='/contact' element={<ContactPage />} />
         <Route path='/team' element={<TeamPage />} />
         <Route path='*' element={<HomePage />} />
       </Routes>

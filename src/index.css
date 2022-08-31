@@ -30,3 +30,12 @@ a {
 .main {
   padding: 40px 0;
 }
+
+.map {
+  max-width: 1440px;
+  height: 418px;
+  background-image: url('./img/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
