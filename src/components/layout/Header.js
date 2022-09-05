@@ -7,15 +7,11 @@ import useWindowDimensions from '../../hooks/useWindowDimentions';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
   const { width } = useWindowDimensions();
   const [isShow, setIsShow] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [headerStyle, setHeaderStyle] = useState('');
-
-  document.body.onscroll = function () {
-    setScrollPosition(window.scrollY);
-  };
+  const { scrollPosition } = props;
 
   const toggleMenu = (event) => {
     event.preventDefault();

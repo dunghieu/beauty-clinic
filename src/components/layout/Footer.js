@@ -11,16 +11,12 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const Footer = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+const Footer = (props) => {
   const [scrollBtnPosition, setScrollBtnPosition] = useState('');
+  const { scrollPosition } = props;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  document.body.onscroll = function () {
-    setScrollPosition(window.scrollY);
   };
 
   useEffect(() => {

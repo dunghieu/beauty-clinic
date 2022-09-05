@@ -9,11 +9,17 @@ import BlogPage from './pages/BlogPage';
 import TeamPage from './pages/TeamPage';
 import ContactPage from './pages/ContactPage';
 import ScrollToTop from './helpers/ScrollToTop';
+import { useState } from 'react';
 
 export default function App() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  document.body.onscroll = function () {
+    setScrollPosition(window.scrollY);
+  };
+
   return (
     <>
-      <Header />
+      <Header scrollPosition={scrollPosition} />
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,7 +32,7 @@ export default function App() {
           <Route path="*" element={<HomePage />} />
         </Routes>
       </ScrollToTop>
-      <Footer />
+      <Footer scrollPosition={scrollPosition} />
     </>
   );
 }
