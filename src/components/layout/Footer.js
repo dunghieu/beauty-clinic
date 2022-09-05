@@ -7,6 +7,7 @@ import iconTwitter from '../../img/IconTwitter.png';
 import iconLinkedin from '../../img/IconLinked.png';
 import iconYoutube from '../../img/IconYoutube.png';
 import iconInstagram from '../../img/IconInstagram.png';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -21,6 +22,10 @@ const Footer = () => {
   document.body.onscroll = function () {
     setScrollPosition(window.scrollY);
   };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     if (scrollPosition > document.body.scrollHeight - 1000) {
@@ -57,11 +62,21 @@ const Footer = () => {
               <div className=" Footer__menu-sub">
                 <strong>Pages</strong>
                 <ul>
-                  <li>➤ Home</li>
-                  <li>➤ About</li>
-                  <li>➤ Services</li>
-                  <li>➤ Gallery</li>
-                  <li>➤ Team</li>
+                  <li>
+                    <Link to="/">➤ Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">➤ About</Link>
+                  </li>
+                  <li>
+                    <Link to="/service">➤ Services</Link>
+                  </li>
+                  <li>
+                    <Link to="/gallery">➤ Gallery</Link>
+                  </li>
+                  <li>
+                    <Link to="/team">➤ Team</Link>
+                  </li>
                 </ul>
               </div>
               <div className=" Footer__menu-sub">
@@ -69,8 +84,12 @@ const Footer = () => {
                 <ul>
                   <li>➤ Terms & conditions</li>
                   <li>➤ Privacy policy</li>
-                  <li>➤ Blog</li>
-                  <li>➤ Contact</li>
+                  <li>
+                    <Link to="/blog">➤ Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">➤ Contact</Link>
+                  </li>
                 </ul>
               </div>
             </div>

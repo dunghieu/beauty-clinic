@@ -15,6 +15,7 @@
   line-height: 24px;
   letter-spacing: 0.1em;
   color: #091156;
+  cursor: pointer;
 }
 
 .Section__appointment::after {

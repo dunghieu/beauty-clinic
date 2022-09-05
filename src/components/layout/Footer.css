@@ -89,9 +89,17 @@
   transition: 0.5s;
   cursor: pointer;
 }
+
+.Footer__menu-sub ul li a {
+  color: #d9ddfe;
+}
+
+.Footer__menu-sub ul li a:hover {
+  color: #ff64ae;
+}
+
 .Footer__menu-sub ul li:hover {
   transform: translateX(10px);
-  color: #ff64ae;
 }
 
 .Footer__bottom {

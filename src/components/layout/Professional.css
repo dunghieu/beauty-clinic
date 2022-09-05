@@ -8,6 +8,8 @@
 
 .Professional__team .Professional__wrapper {
   background-image: url('../../img/TeamBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Professional__wrapper {
@@ -18,7 +20,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1140px;
+  max-width: 1440px;
 }
 
 .Professional__Info {
