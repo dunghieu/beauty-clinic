@@ -1,10 +1,12 @@
 .SkinTreatements {
   width: 100%;
+  margin: 50px 0;
 }
 
 .SkinTreatements__wrapper {
   display: flex;
-  padding: 50px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {

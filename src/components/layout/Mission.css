@@ -4,7 +4,8 @@
 
 .Mission__wrapper {
   display: flex;
-  padding: 50px 20px;
+  margin: 50px auto;
+  max-width: 1440px;
 }
 
 @media (max-width: 1024px) {

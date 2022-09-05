@@ -9,8 +9,9 @@
   align-items: center;
   justify-content: center;
   max-width: 1440px;
-  padding: 0 234px;
   gap: 75px;
+  margin: 0 auto;
+  padding: 0 200px;
 }
 
 .FAQs__title {
@@ -48,6 +49,8 @@
   letter-spacing: 0.1em;
   color: #091156;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .FAQs__question::after {
@@ -55,7 +58,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 0px;
+  right: -25px;
   font-size: 30px;
   transform: rotate(90deg);
 }

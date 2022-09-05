@@ -4,8 +4,9 @@
 
 .Vision__wrapper {
   display: flex;
+  max-width: 1440px;
+  margin: 50px auto;
   flex-direction: row-reverse;
-  padding: 50px 20px;
 }
 
 @media (max-width: 1024px) {
