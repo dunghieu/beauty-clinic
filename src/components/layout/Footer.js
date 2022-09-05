@@ -7,11 +7,30 @@ import iconTwitter from '../../img/IconTwitter.png';
 import iconLinkedin from '../../img/IconLinked.png';
 import iconYoutube from '../../img/IconYoutube.png';
 import iconInstagram from '../../img/IconInstagram.png';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Footer = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollBtnPosition, setScrollBtnPosition] = useState('');
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  document.body.onscroll = function () {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    if (scrollPosition > document.body.scrollHeight - 1000) {
+      setScrollBtnPosition('absolute');
+    } else if (scrollPosition > 100) {
+      setScrollBtnPosition('fixed');
+    } else {
+      setScrollBtnPosition('');
+    }
+  }, [scrollPosition]);
 
   return (
     <footer className="Footer">
@@ -79,7 +98,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="Footer__scroll" onClick={scrollToTop}>
+        <div
+          className="Footer__scroll"
+          style={{ position: scrollBtnPosition }}
+          onClick={scrollToTop}
+        >
           <img src={toTopBtn} alt="img" />
         </div>
       </div>

@@ -16,7 +16,7 @@ const Card = (props) => {
         <div className="Card__contact">
           {props.contact &&
             props.contact.map((item, index) => (
-              <a href="#">
+              <a href="#" key={index}>
                 <img src={item} alt="img" />
               </a>
             ))}
