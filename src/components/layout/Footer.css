@@ -111,6 +111,7 @@
   width: 30%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .Footer__social span img {

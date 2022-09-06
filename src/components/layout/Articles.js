@@ -6,6 +6,8 @@ import articleImg3 from '../../img/Article3.png';
 import articleImg4 from '../../img/Article4.png';
 import articleImg5 from '../../img/Article5.png';
 import articleImg6 from '../../img/Article6.png';
+import Pagination from '../UI/Pagination';
+import {useMemo, useState} from 'react';
 
 const DUMMY_ARTICLES = [
   {
@@ -57,9 +59,18 @@ const DUMMY_ARTICLES = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eu aliquam nunc nisl eu ante. Sed euismod, nunc vel tincidunt lacinia, nisl nisl aliquam nisl, eu aliquam nunc nisl eu ante.',
   },
 ];
+let PageSize = 3;
 
 const Articles = () => {
-  const articleList = DUMMY_ARTICLES.map((article) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return DUMMY_ARTICLES.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
+  const articleList = currentTableData.map((article) => {
     return (
       <Article
         key={article.id}
@@ -71,7 +82,18 @@ const Articles = () => {
     );
   });
 
-  return <section className='Articles'>{articleList}</section>;
+  return (
+    <section className='Articles'>
+      {articleList}
+      <Pagination
+        className='Articles__pagination'
+        currentPage={currentPage}
+        totalCount={DUMMY_ARTICLES.length}
+        pageSize={PageSize}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
+    </section>
+  );
 };
 
 export default Articles;

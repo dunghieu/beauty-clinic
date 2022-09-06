@@ -4,7 +4,7 @@ import './Article.css';
 
 const Article = (props) => {
   return (
-    <div className='Article'>
+    <article className='Article'>
       <div className='Article__img'>
         <img src={props.articleImg} alt='' />
       </div>
@@ -16,7 +16,7 @@ const Article = (props) => {
         </Info>
         <Button className='Article__content-button'>Read More</Button>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -1,9 +1,26 @@
 .Articles {
   display: flex;
+  position: relative;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100%;
   height: 100%;
   gap: 130px;
+}
+
+.Articles__pagination {
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .Articles__pagination {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Articles {
+    align-items: center;
+  }
 }

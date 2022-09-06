@@ -1,0 +1,20 @@
+.SocialConnect__list {
+  display: flex;
+  gap: 20px;
+}
+
+.SocialConnect__img {
+  width: 43px;
+  height: 43px;
+  background: #ffffff;
+  box-shadow: 0px 4px 19px 11px #f6f7ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SocialConnect__img img {
+  width: 25px;
+  height: 25px;
+}

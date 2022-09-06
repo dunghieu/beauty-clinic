@@ -1,6 +1,10 @@
 import './BlogMain.css';
 import Articles from './Articles';
-import SearchWidget from './SearchWidget';
+import SearchWidget from '../widget/SearchWidget';
+import RecentPostsWidget from '../widget/RecentPostsWidget';
+import CategoryWidget from '../widget/CategoryWidget';
+import CloudTagsWidget from '../widget/CloudTagsWidget';
+import SocialConnectWidget from '../widget/SocialConnectWidget';
 
 const BlogMain = () => {
   return (
@@ -10,6 +14,10 @@ const BlogMain = () => {
       </div>
       <div className='Blog__right'>
         <SearchWidget />
+        <RecentPostsWidget />
+        <CategoryWidget />
+        <CloudTagsWidget />
+        <SocialConnectWidget />
       </div>
     </div>
   );

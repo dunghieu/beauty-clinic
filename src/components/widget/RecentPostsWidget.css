@@ -1,0 +1,37 @@
+.RecentPosts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.RecentPosts__link {
+  display: flex;
+  gap: 25px;
+}
+
+.RecentPosts__img img {
+  width: 82px;
+  height: 82px;
+}
+
+.RecentPosts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.RecentPosts__date {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #ff64ae;
+}
+
+.RecentPosts__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #8b8b8b;
+}

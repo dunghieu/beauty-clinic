@@ -1,0 +1,23 @@
+.CloudTags__list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 10px;
+}
+
+.CloudTags__item {
+  background: #ffffff;
+  box-shadow: 0px 4px 17px #eef0ff;
+  border-radius: 50px;
+  width: 82px;
+  height: 26px;
+  text-align: center;
+}
+
+.CloudTags__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #8b8b8b;
+}

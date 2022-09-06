@@ -1,0 +1,13 @@
+.Category__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Category__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #8b8b8b;
+}

@@ -12,6 +12,9 @@
 
 .Blog__right {
   max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 83px;
 }
 
 @media (max-width: 1440px) {

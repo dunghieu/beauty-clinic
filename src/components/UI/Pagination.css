@@ -1,0 +1,37 @@
+.Pagination {
+  display: flex;
+  gap: 20px;
+}
+
+.Pagination__item {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #c7c7c7;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.Pagination__item:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.Pagination__item_active {
+  background: #172176;
+  box-shadow: 0px 7px 37px 4px #e6e9ff;
+  color: #ffffff;
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
