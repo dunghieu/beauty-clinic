@@ -1,14 +1,19 @@
 .SliderPlus {
   width: 100%;
+  margin-top: -50px;
 }
 
 .SliderPlus__wrapper {
-  max-width: 1440px;
   height: 918px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 150px;
   display: flex;
   align-items: center;
+  background-image: url('../../img/SlideBackground2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .SliderPlus__left {

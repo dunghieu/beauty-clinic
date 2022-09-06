@@ -25,7 +25,7 @@ const HeaderPlus = (props) => {
   useEffect(() => {
     if (scrollPosition > 100) {
       setHeaderPlusStyle({
-        backgroundColor: 'rgba(23, 32, 108, 0.7);',
+        backgroundColor: 'rgba(23, 32, 108, 0.7)',
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
       });
     } else {

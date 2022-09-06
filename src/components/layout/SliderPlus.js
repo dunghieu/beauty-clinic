@@ -1,4 +1,4 @@
-import React from 'react';
+import './SliderPlus.css';
 
 const SliderPlus = () => {
   return (

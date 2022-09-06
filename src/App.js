@@ -25,7 +25,7 @@ export default function App() {
   return (
     <>
       {url !== '/home' && <Header scrollPosition={scrollPosition} />}
-      {url === '/home' && <HeaderPlus />}
+      {url === '/home' && <HeaderPlus scrollPosition={scrollPosition} />}
       <ScrollToTop>
         <Routes>
           <Route path='/' element={<HomePage />} />
