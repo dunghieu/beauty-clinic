@@ -2,6 +2,7 @@ import HomePage from './pages/HomePage';
 import {Route, Routes} from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import HomePagePlus from './pages/HomePagePlus';
 import AboutPage from './pages/AboutPage';
 import ServicePage from './pages/ServicePage';
 import GalleryPage from './pages/GalleryPage';
@@ -23,6 +24,7 @@ export default function App() {
       <ScrollToTop>
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/home' element={<HomePagePlus />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/service' element={<ServicePage />} />
           <Route path='/gallery' element={<GalleryPage />} />
