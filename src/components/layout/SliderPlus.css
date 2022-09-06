@@ -1,0 +1,20 @@
+.SliderPlus {
+  width: 100%;
+}
+
+.SliderPlus__wrapper {
+  max-width: 1440px;
+  height: 918px;
+  margin: 0 auto;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+}
+
+.SliderPlus__left {
+  width: 44%;
+}
+
+.SliderPlus__right {
+  width: 24%;
+}

@@ -1,0 +1,144 @@
+.HeaderPlus {
+  position: fixed;
+  width: 100%;
+  padding: 0px 20px;
+  z-index: 10;
+}
+.HeaderPlus__wrapper {
+  position: relative;
+  max-width: 1140px;
+  height: 63px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.HeaderPlus__toggle {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  top: 10px;
+  border: 1px solid #ff64ae;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.HeaderPlus__icon {
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff64ae;
+  z-index: 10;
+}
+
+.HeaderPlus__icon::after,
+.HeaderPlus__icon::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: #ff64ae;
+}
+.HeaderPlus__icon::after {
+  transform: translateY(-200%);
+}
+.HeaderPlus__icon::before {
+  transform: translateY(200%);
+}
+
+.show {
+  position: fixed;
+  height: 100%;
+  width: 30%;
+  right: 0px;
+  top: 0px;
+  background-color: #fff;
+  display: block !important;
+  z-index: 20;
+}
+
+.show > .HeaderPlus__menu {
+  display: block !important;
+  right: none;
+  top: 30%;
+  left: 25px;
+}
+.show > .HeaderPlus__contact {
+  display: block !important;
+  left: 10%;
+  top: 80%;
+  /* transform: translateX(-80%); */
+}
+.show > .HeaderPlus__menu > ul {
+  display: flex;
+  flex-direction: column;
+}
+.show > .HeaderPlus__menu > ul > li {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.HeaderPlus__logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 258px;
+  height: 63px;
+  z-index: 10;
+}
+
+.HeaderPlus__menu {
+  position: absolute;
+  top: 15px;
+  right: 15%;
+}
+
+.HeaderPlus__menu-children li {
+  float: left;
+}
+.HeaderPlus__menu-children a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  padding: 0 1rem;
+  color: #d8dcff;
+  text-decoration: none;
+}
+.HeaderPlus__menu-children li .active {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.HeaderPlus a:hover {
+  font-weight: 600;
+}
+
+.HeaderPlus__contact {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media (max-width: 740px) {
+  .show {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .HeaderPlus__content {
+    display: none;
+  }
+
+  .HeaderPlus__toggle {
+    display: block;
+  }
+}
