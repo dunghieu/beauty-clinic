@@ -1,0 +1,30 @@
+.Article {
+  max-width: 730px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 10px 13px 80px 14px #f2f4ff;
+}
+
+.Article__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.Article__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  padding: 50px 75px;
+}
+
+.Article__content-info {
+  gap: 15px;
+}
+
+.Article__content-button::after {
+  content: '▸';
+  display: absolute;
+  margin-left: 5px;
+}

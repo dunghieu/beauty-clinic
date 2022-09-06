@@ -1,0 +1,34 @@
+.Blog__main {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  padding: 0 150px;
+}
+
+.Blog__left {
+  max-width: 730px;
+}
+
+.Blog__right {
+  max-width: 350px;
+}
+
+@media (max-width: 1440px) {
+  .Blog__main {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Blog__main {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Blog__main {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
