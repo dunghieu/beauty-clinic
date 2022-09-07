@@ -7,7 +7,7 @@
   padding: 0 100px;
 }
 
-.Section__appointment {
+.Section__link {
   padding-top: 30px;
   position: relative;
   font-weight: 600;
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.Section__appointment::after {
+.Section__link::after {
   content: '>>';
   position: absolute;
   margin-left: 20px;

@@ -1,10 +1,10 @@
 import React from 'react';
 import About from '../components/layout/About';
 import Clients from '../components/layout/Clients';
-import Mission from '../components/layout/Mission';
+import Mission from '../components/sections/Mission';
 import Professional from '../components/layout/Professional';
 import Slogan from '../components/layout/Slogan';
-import Vision from '../components/layout/Vision';
+import Vision from '../components/sections/Vision';
 import sloganAbout from '../img/SloganAbout.png';
 
 const sloganName = 'Business Slogan';
@@ -19,7 +19,7 @@ const professionalDescription =
 
 const AboutPage = () => {
   return (
-    <div className='main'>
+    <div className="main">
       <About />
       <Professional
         professionalName={professionalName}

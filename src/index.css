@@ -21,11 +21,6 @@ a {
   text-decoration: none;
 }
 
-.pagewrap {
-  display: flex;
-  flex-direction: column;
-}
-
 .main {
   padding: 40px 0;
 }

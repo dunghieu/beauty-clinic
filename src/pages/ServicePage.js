@@ -1,7 +1,7 @@
-import BeautyConsultation from '../components/services/BeautyConsultation';
-import BeautyProduct from '../components/services/BeautyProduct';
+import BeautyConsultation from '../components/sections/BeautyConsultation';
+import BeautyProduct from '../components/sections/BeautyProduct';
+import SkinTreatements from '../components/sections/SkinTreatements';
 import Services from '../components/layout/Services';
-import SkinTreatements from '../components/services/SkinTreatements';
 import Slogan from '../components/layout/Slogan';
 import sloganService from '../img/SloganServices.png';
 import playBtn from '../img/PlayBtn.png';
@@ -13,18 +13,18 @@ const sloganDescription =
 
 const ServicePage = () => {
   return (
-    <div className='main'>
+    <div className="main">
       <Services />
       <BeautyConsultation />
       <SkinTreatements />
       <BeautyProduct />
       <Slogan
-        className='Slogan__service'
+        className="Slogan__service"
         slogan={sloganService}
         sloganTitle={sloganTitle}
         sloganDescription={sloganDescription}
       >
-        <img src={playBtn} alt='' />
+        <img src={playBtn} alt="" />
         <span>Treatments Videos</span>
       </Slogan>
       <FAQs />

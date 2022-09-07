@@ -10,15 +10,14 @@ const Vision = () => {
   Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.`;
 
   return (
-    <section className='Vision'>
-      <div className='Vision__wrapper'>
+    <section className="Vision">
+      <div className="Vision__wrapper">
         <Section
           sectionName={visionName}
           sectionTitle={visionTitle}
           sectionDescription={visionDescription}
-        >
-          <img src={visionImg} alt={visionName} />
-        </Section>
+          sectionImg={visionImg}
+        ></Section>
       </div>
     </section>
   );

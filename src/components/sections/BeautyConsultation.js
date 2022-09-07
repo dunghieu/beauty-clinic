@@ -9,15 +9,15 @@ const BeautyConsultation = () => {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.';
 
   return (
-    <section className='BeautyConsultation'>
-      <div className='BeautyConsultation__wrapper'>
+    <section className="BeautyConsultation">
+      <div className="BeautyConsultation__wrapper">
         <Section
-          isServicePage={true}
           sectionName={beautyConsultationName}
           sectionTitle={beautyConsultationTitle}
           sectionDescription={beautyConsultationDescription}
+          sectionImg={beautyConsultationImg}
         >
-          <img src={beautyConsultationImg} alt={beautyConsultationName} />
+          <div className="Section__link">Make an Appointment</div>
         </Section>
       </div>
     </section>

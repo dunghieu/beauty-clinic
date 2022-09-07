@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   padding: 0px 20px;
-  z-index: 10;
+  z-index: 100;
 }
 .HeaderPlus__wrapper {
   position: relative;
@@ -83,6 +83,10 @@
   width: 100%;
   padding: 10px;
   border-bottom: 1px solid #8b8b8b;
+}
+
+.show > .HeaderPlus__menu > ul > li > a {
+  color: #8b8b8b;
 }
 
 .HeaderPlus__logo {

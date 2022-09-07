@@ -8,15 +8,15 @@ const BeautyProduct = () => {
   const beautyProductDescription =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.';
   return (
-    <section className='BeautyProduct'>
-      <div className='BeautyProduct__wrapper'>
+    <section className="BeautyProduct">
+      <div className="BeautyProduct__wrapper">
         <Section
-          isServicePage={true}
           sectionName={beautyProductName}
           sectionTitle={beautyProductTitle}
           sectionDescription={beautyProductDescription}
+          sectionImg={beautyProductImg}
         >
-          <img src={beautyProductImg} alt={beautyProductName} />
+          <div className="Section__link">Make an Appointment</div>
         </Section>
       </div>
     </section>

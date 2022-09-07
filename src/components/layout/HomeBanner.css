@@ -1,0 +1,71 @@
+.HomeBanner {
+  width: 100%;
+}
+
+.HomeBanner__wrapper {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+  background-image: url('../../img/Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.HomeBanner__left {
+  width: 50%;
+}
+
+.HomeBanner__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.HomeBanner__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #d8dcff;
+}
+
+.HomeBanner__right {
+  width: 50%;
+}
+
+.HomeBanner__item {
+}
+
+.HomeBanner__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.HomeBanner__icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.HomeBanner__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.HomeBanner__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.HomeBanner__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #d8dcff;
+}

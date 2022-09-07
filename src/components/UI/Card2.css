@@ -1,0 +1,103 @@
+.Card2 {
+  max-width: 260px;
+  background: #ffffff;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.Card2:hover {
+  transform: translateY(-3px);
+  border: 1px solid #9ba2e0;
+}
+.Card2__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  gap: 25px;
+}
+
+/* .Card2__image {
+  height: 100%;
+} */
+
+.Card2__image img {
+  height: 64px;
+  width: 64px;
+}
+.Card2__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Card2__info-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  color: #091156;
+}
+
+.Card2__info-describe {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #8b8b8b;
+}
+
+.Card2__link {
+  display: flex;
+}
+
+.Card2__link a {
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 125%;
+  color: #ff64ae;
+}
+
+.Card2__link a::after {
+  position: absolute;
+  content: '>>';
+  letter-spacing: -0.3em;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+/* .Card__contact {
+  margin-top: 50px;
+}
+.Card__contact a {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  box-shadow: -2px 6px 16px -1px #f7f7ff;
+  cursor: pointer;
+}
+.Card__contact a img {
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  transform: scale(1.5);
+}
+
+.Card__contact a:hover > img {
+  transform: scale(1.7);
+} */
+
+@media only screen and (max-width: 740px) {
+  .Card__info-describe {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1112px) {
+  .Card2 {
+    max-width: 250px;
+  }
+}

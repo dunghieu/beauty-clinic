@@ -10,15 +10,14 @@ const Mission = () => {
   Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.`;
 
   return (
-    <section className='Mission'>
-      <div className='Mission__wrapper'>
+    <section className="Mission">
+      <div className="Mission__wrapper">
         <Section
           sectionName={missionName}
           sectionTitle={missionTitle}
           sectionDescription={missionDescription}
-        >
-          <img src={missionImg} alt={missionName} />
-        </Section>
+          sectionImg={missionImg}
+        ></Section>
       </div>
     </section>
   );

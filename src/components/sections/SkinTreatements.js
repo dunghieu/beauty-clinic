@@ -9,15 +9,15 @@ const SkinTreatements = () => {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.';
 
   return (
-    <section className='SkinTreatements'>
-      <div className='SkinTreatements__wrapper'>
+    <section className="SkinTreatements">
+      <div className="SkinTreatements__wrapper">
         <Section
-          isServicePage={true}
           sectionName={skinTreatementsName}
           sectionTitle={skinTreatementsTitle}
           sectionDescription={skinTreatementsDescription}
+          sectionImg={skinTreatementsImg}
         >
-          <img src={skinTreatementsImg} alt={skinTreatementsName} />
+          <div className="Section__link">Make an Appointment</div>
         </Section>
       </div>
     </section>
